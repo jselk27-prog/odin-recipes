@@ -1,106 +1,21 @@
-/* ===== General Body Styles ===== */
+/* ===== Global Styles ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Georgia', serif;
-    background: #fff7f0;
-    color: #333;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6f0;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* ===== Headings ===== */
-h1 {
-    color: #d35400;
-    text-align: center;
-    font-family: 'Palatino Linotype', serif;
-    font-size: 3em;
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #e67e22;
-    margin-top: 30px;
-    border-bottom: 2px solid #e67e22;
-    padding-bottom: 5px;
-}
-
-/* ===== Links ===== */
-a {
-    color: white;
-    background-color: #d35400;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 20px;
-    transition: background 0.3s ease;
-}
-
-a:hover {
-    background-color: #e67e22;
-}
-
-/* ===== Index recipe list ===== */
-ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-ul li {
-    background: #fbe5d6;
-    padding: 15px 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-}
-
-ul li a {
-    color: #d35400;
-    font-weight: bold;
-    background: none;
-    padding: 0;
-}
-
-/* ===== Images ===== */
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-    max-width: 100%;
-    height: auto;
-}
-
-/* ===== Lists ===== */
-ul, ol {
-    margin-left: 40px;
-}
-
-/* ===== Buttons ===== */
-body > a {
-    margin-top: 10px;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-    ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+/* ===== Hero Section ===== */
 .hero {
   background-color: #f4a261;
-  color: #ffffff;
+  color: white;
   text-align: center;
   padding: 60px 20px;
 }
@@ -112,4 +27,61 @@ body > a {
 
 .hero p {
   font-size: 1.2rem;
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Recipe Links ===== */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 15px 0;
+  text-align: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #e76f51;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Recipe Pages ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+ol, ul {
+  max-width: 700px;
+  margin: 0 auto 30px;
 }
